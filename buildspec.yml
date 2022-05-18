@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  build:
+    commands:
+    - mvn clean install
+  post_build:
+    commands:
+    - mv target/spring-ci-cd-0.0.1-SNAPSHOT.jar spring-ci-cd-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+  - spring-ci-cd-0.0.1-SNAPSHOT.jar 
